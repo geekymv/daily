@@ -18,10 +18,10 @@ public class SVNUtils {
 	public SVNUtils() {
 		try {
 			
-			SVNURL url = SVNURL.parseURIDecoded("https://svn.iflytek.com:8888/svn/HR_smartcity/协作管理/各地项目实施数据/城市令定制组/工作日报");
+			SVNURL url = SVNURL.parseURIDecoded("");
 			SVNRepository repository = SVNRepositoryFactory.create(url);
 			
-			ISVNAuthenticationManager authManager = SVNWCUtil.createDefaultAuthenticationManager("miying", "geekymv8821823?");  
+			ISVNAuthenticationManager authManager = SVNWCUtil.createDefaultAuthenticationManager("", "");  
 	        repository.setAuthenticationManager(authManager);  
 			
 	        SVNURL svnurl = repository.getRepositoryRoot(true);
